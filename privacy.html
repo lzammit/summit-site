@@ -9,17 +9,18 @@
 <body>
 <main>
   <h1><span class="tag"></span>Summit Trail Privacy Policy</h1>
-  <p class="date">Last updated 20 October 2026</p>
+  <p class="date">Last updated 21 October 2026</p>
   <p>Summit Trail is a game where a hiker climbs a mountain as you walk and work out. It runs on your iPhone.</p>
 
   <h2>What the developer collects</h2>
-  <p>Nothing. There is no account, no analytics, no advertising, no tracking and no crash reporting of our own. Your data is never sent to us, sold or shared with anyone.</p>
+  <p>Without an account, nothing. The game works fully on your iPhone, and nothing about you is sent to us.</p>
+  <p>If you choose to sign in to a Summit Trail account, the Summit Trail server keeps the data listed under "Optional: Summit Trail account" below, so your trail can show on a computer and to friends you invite. There is no advertising, no tracking, no third-party analytics and no crash reporting of our own. Your data is never sold or shared with anyone, and never used for advertising.</p>
 
   <h2>Apple Health data</h2>
   <p>With your permission, the app reads these types from Apple Health: steps, active energy, workouts, height and weight. It uses them only to play the game on your phone: steps and workouts move the hiker, active energy makes him stronger, and height and weight turn steps and workout energy into distance. The app never writes to Apple Health, never uses Health data for advertising or marketing, and does not store it in iCloud. You can change or remove access at any time in the Health app.</p>
 
   <h2>What stays on your iPhone</h2>
-  <p>The app keeps a copy of your daily totals, your hiker's name, your step goal, your reminder settings and, if you use it, a sharing token, so the game shows quickly. This copy is excluded from iCloud backups. Deleting the app deletes it; your data in Apple Health is not affected.</p>
+  <p>The app keeps a copy of your daily totals, your hiker's name, your step goal, your reminder settings and, if you use them, your account or sharing keys, so the game shows quickly. This copy is excluded from iCloud backups. Deleting the app deletes it; your data in Apple Health is not affected.</p>
 
   <h2>Weather on the trail (optional)</h2>
   <p>If you type a city in Settings, the app looks it up with Open-Meteo's free geocoding service and then asks Open-Meteo for the current weather there, to show rain, snow or sun on the trail. Only the city name you typed and its position rounded to about 10 km are sent; the app never asks for your device location. Open-Meteo does not require an account. Leave the field empty to turn this off.</p>
@@ -27,12 +28,27 @@
   <h2>Reminders</h2>
   <p>Reminders are local notifications created on your iPhone from your own activity. Nothing is sent to a server to produce them. You can turn them off in the app's Settings or in iOS Settings.</p>
 
+  <h2>Optional: Summit Trail account</h2>
+  <p>You can sign in with Apple in the app's Settings. The app asks Apple for no name and no email address. Apple gives the server a random identifier for you that only works for Summit Trail, and that is how the server recognizes your account.</p>
+  <p>While you are signed in, the app sends the server:</p>
+  <ul>
+    <li>your daily totals since your journey started: date, steps, active energy, workout energy, steps during workouts and workout types;</li>
+    <li>your hiker's name and step goal, and your weather city if you set one (its position rounded to about 10 km);</li>
+    <li>the stride and energy-per-kilometre values used to turn steps and workouts into distance. These come from your height and weight, but your height and weight themselves are never sent.</li>
+  </ul>
+  <p>The server also keeps when your account was created and when it last synced, a code for each phone and browser you signed in with (stored scrambled, so it can't be read back), your friends on Summit Trail and any invite codes you made. It never receives your location, your email, your heart rate or anything else from Apple Health.</p>
+  <p><strong>Where it lives.</strong> The server runs at summittrail.ca on a computer rented from Akamai (Linode) in Toronto, Canada. All traffic is encrypted with https. A copy of the database is made every night on the same server and kept for 14 days, in case something breaks.</p>
+  <p><strong>Who sees it.</strong> Only you, from your phone or from a browser you signed in with a one-time code. Friends see your hiker's name, form, position on the trail and today's step count, nothing else. The developer can see the database to run the server, and looks only at overall numbers, such as how many accounts exist and how many people are still walking after a month, never at one person's walks.</p>
+  <p><strong>Server logs.</strong> Like any web server, it records the IP address and time of each request. These logs are used only to keep the service running and to block abuse, such as someone guessing invite codes, and are deleted automatically as the log rotates, typically within a few weeks.</p>
+  <p><strong>Your choices.</strong> In Settings, under Summit Trail account, you can export everything the server keeps about you as a file, sign out, or delete your account. Deleting removes your journey, settings and friends from the server right away; the nightly copies age out within 14 days. You can also stop using Sign in with Apple for Summit Trail in iOS Settings, under your name, then Sign-In &amp; Security. The game keeps working on your phone after you sign out or delete the account.</p>
+
   <h2>Optional: sharing to your own server</h2>
   <p>If you choose to connect the app to a Summit Trail server that you run yourself (for example on a computer at home), the app sends that server your daily totals (date, steps, active energy, workout energy, steps during workouts and workout types), your hiker's name, step goal and weather city if you set one, and the stride and energy-per-kilometre values used for distance. It goes only to the address you enter, which the developer has no access to. Addresses outside your home network must use an encrypted https:// connection. You can stop sharing at any time in Settings; data already on your server stays there until you delete it from that server.</p>
   <p>To reach a server on your home network, iOS asks for Local Network access. The app uses it only to talk to the server you entered.</p>
 
   <h2>Optional: walking buddies</h2>
-  <p>If you join a friend's trail with an invite code, or invite friends to yours, the app sends that trail's server (run by the person who invited you, never by the developer) exactly four things: your hiker's name, your hiker's form, your position on the trail and today's step count. The server keeps nothing else, and other buddies on that trail see the same four things about you. You can leave a trail at any time in Settings, which deletes your entry on that server; the person running it can also remove you.</p>
+  <p>With a Summit Trail account, invited friends become buddies on the Summit Trail server, and each of you sees only the other's hiker name, form, position on the trail and today's step count.</p>
+  <p>If you join a friend's trail on a server they run themselves, the app sends that server (run by the person who invited you, never by the developer) exactly four things: your hiker's name, your hiker's form, your position on the trail and today's step count. The server keeps nothing else, and other buddies on that trail see the same four things about you. You can leave a trail at any time in Settings, which deletes your entry on that server; the person running it can also remove you.</p>
 
   <h2>Not medical advice</h2>
   <p class="note">Distances, calories and levels in the game are estimates for motivation only. They are not medical advice. Talk to a health professional before starting a new exercise routine.</p>
